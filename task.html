@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка треугольника</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+      <a href="index.html"><img src="img/main_icon.svg" height="48px" width="48px"></a>
+      <a href="index.html#order">Заказ</a>
+      <a href="page2.html">Меню</a>
+      <a href="page3.html">Рецепты</a>
+      <a href="dom_js.html">DOMJS</a>
+      <a href="task.html">Задача</a>
+      <a href="https://jc-lounge.ru/" target="_blank">Партнёрский Бар</a>
+    </nav>
+
+    <h3>Проверить, существует ли треугольник с длинами сторон X, Y, Z и является ли он прямоугольным.</h3>
+    <form id="triangleForm" action="https://www.bing.com/search?" name="UserEnter" target="_blank">
+        <ul>
+            <input name="q" value="search" type="hidden">
+            <li>Формулировка задачи:
+                <br><textarea cols="60" rows="6" id="task" name="formulation">Даны вещественные числа: X, Y , Z. Определить, существует ли треугольник с такими длинами сторон и, если существует, будет ли он прямоугольным? Если принадлежит - отправить все на сервер</textarea>
+            </li>
+            <li>Сторона X: <input id="x" name="x" type="number" step="0.01" required></li>
+            <li>Сторона Y: <input id="y" name="y" type="number" step="0.01" required></li>
+            <li>Сторона Z: <input id="z" name="z" type="number" step="0.01" required></li>
+            <li>Результат: <input id="result" name="result" value="не определен" readonly></li>
+            <li><input id="verify_btn" type="button" value="Проверить"></li>
+            <li><input id="submit_btn" type="button" value="Отправить"></li>
+        </ul>
+    </form>
+    <script src="js/app.js"></script>
+</body>
+</html>

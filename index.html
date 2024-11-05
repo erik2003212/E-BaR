@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="img/main_icon.svg" height="48px" width="48px"></a>
+  <a href="index.html#order">Заказ</a>
+  <a href="page2.html">Меню</a>
+  <a href="page3.html">Рецепты</a>
+  <a href="dom_js.html">DOMJS</a>
+  <a href="task.html">Задача</a>
+  <a href="https://jc-lounge.ru/">Партнёрский Бар</a>
+</nav>
+
+<h1>Добро пожаловать на наш сайт <span class="e_letter">Е</span>-бар</h1>
+<p>Сладкая мелодия истории: Коктейль, бармен и танец вкусов
+В каждой капле коктейля скрывается целый мир, пропитанный историей, традициями и неутомимой жаждой открытий. Этот напиток, созданный из смеси вкусов и ароматических нот, словно звуковая волна, переносит нас через века, показывая разнообразие культуры через призму стакана.</p>
+
+<p>С первых дней своего существования коктейль был не просто напитком, он был посланием, мостом между разными мирами. Он рождался в глубинах тропических лесов, где изысканные фрукты переплетались с терпкими травами, он зарождался на солнечных плантациях, где сахарный тростник встречался с душистым ромом, он был вдохновлен холодными вечерами в старых английских пабах, где виски и джин соединялись с согревающими специями.</p>
+
+<p>Бармен – это не просто смешиватель напитков, он – хранитель истории, мастер искусства вкуса, проводник в мир ароматических открытий. В его руках каждый ингредиент превращается в кирпичик новой истории, в ноту мелодии, которая звучит на языке вкуса. Он – дирижер оркестра из фруктов, специй, напитков, создающий гармонию, которая перекликается с глубинами нашей души.</p>
+
+<p>Коктейль – это танец вкусов, который оживает в каждом глотке. Сладкий фруктовый аккорд в тандеме с терпким оттенком специй, освежающая кислинка лимона, гармонирующая с мягкой нотой алкоголя, – все это сочетается в один гармоничный аккорд, который оставлят незабываемое послевкусие.</p>
+
+<p>Коктейль – это не просто напиток, это история, воплощенная в каждой капле. Это путешествие в мир вкусов, ароматических открытий и незабываемых впечатлений. Это танец истории и современности, который завораживает и оживает в каждом глотке.</p>
+
+<h3>Расскажите о себе</h3>
+<form action="#" method="post">
+    <label for="lastname">Фамилия:</label>
+    <input type="text" id="lastname" name="lastname" required>
+    <br>
+
+    <label for="firstname">Имя:</label>
+    <input type="text" id="firstname" name="firstname" required>
+    <br>
+
+    <label for="group">Группа:</label>
+    <input type="text" id="group" name="group" required>
+    <br>
+
+    <label for="phone">Мобильный телефон:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <br>
+
+    <label for="email">Электронная почта:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <label for="send_date">Дата отправки:</label>
+    <input type="date" id="send_date" name="send_date" required>
+    <br>
+
+    <input type="hidden" name="token" value="your_default_token_value">
+
+    <button type="submit">Отправить</button>
+</form>
+<h3 id="order">Форма заказа</h3>
+<form action="#" method="post">
+    <label for="order_id">Название коктейля:</label>
+    <input value="Ничего" type="text" id="order_id" name="order_id" required>
+    <br>
+
+    <label for="item_count">Количество:</label>
+    <input value=1 type="number" id="item_count" name="item_count" min="1" required>
+    <br>
+
+    <label>Способ оплаты:</label>
+    <input type="radio" id="payment_card" name="payment" value="card" checked>
+    <label for="payment_card">Карта</label>
+    <input type="radio" id="payment_cash" name="payment" value="cash">
+    <label for="payment_cash">Наличные</label>
+    <br>
+
+    <label for="gift_wrap">Безалкогольный:</label>
+    <input type="checkbox" id="gift_wrap" name="gift_wrap" value="yes">
+    <br>
+
+    <label for="delivery_date">Дата доставки:</label>
+    <input value="2000-01-01" type="date" id="delivery_date" name="delivery_date" required>
+    <br>
+
+    <label for="password">Пароль для подтверждения заказа:</label>
+    <input value="password" type="password" id="password" name="password" required>
+    <br>
+
+    <input value="0.05" type="hidden" name="default_discount" >
+
+    <button type="submit">Отправить заказ</button>
+</form>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+body {
+  background-image: url('../img/site_back.jpg'); /* Путь к изображению */
+  background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь экран */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Отключает повторение */
+  font-family: Roboto, sans-serif;
+  color: white;
+  margin: 2% 20%;
+  text-align: center;
+}
+
+.e_letter {
+  color: #B28872;
+}
+nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Стили для активной ссылки */
+.active {
+  background-color: #B28872; /* Цвет для выделения текущей страницы */
+  font-weight: bold;
+}
+
+form label {
+  display: block;
+  margin: 5px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.7); /* Полупрозрачный серый фон */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Легкая тень */
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1; /* Светло-серый фон для полей ввода */
+    color: #333;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 1);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #444; /* Темнее при наведении */
+}
+
+ul {
+    list-style: none; /* Убираем стандартные маркеры */
+    text-align: center; /* Центрируем текст */
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    padding: 20px;
+}
+
+/* Стиль для элементов списка */
+ul li {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px #B28872;
+}
+
+ol {
+    list-style: none; /* Убираем стандартные маркеры */
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    counter-reset: step;
+}
+
+/* Стиль для элементов списка */
+ol li {
+    position: relative;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень под элементами */
+}
+
+/* Кастомные маркеры (номера) для элементов списка */
+ol li::before {
+    content: counter(step);
+    counter-increment: step;
+    font-weight: bold;
+    color: white;
+    background-color: #B28872; /* Яркий цвет маркера */
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: -55px; /* Смещаем маркер влево */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-image: url('img/table_back.jpg'); /* Фоновое изображение */
+    background-size: cover;
+    color: #333;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.85); /* Полупрозрачный белый фон для читаемости */
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+
+/* Стиль для "паспорта" */
+.passport {
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.passport-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.page {
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.field-title {
+    color: gray;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.field-data {
+    color: black;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.image-cell img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.translate-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.translate-button:hover {
+    color: white;
+    background-color: #B28872;
+}
+/* Стили для полей ввода */
+#triangleForm input[type="number"],
+#triangleForm input[type="text"],
+#triangleForm input[type="button"],
+#triangleForm input[type="submit"],
+#triangleForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Кнопки действия */
+#triangleForm input[type="button"],
+#triangleForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#triangleForm input[type="button"]:hover,
+#triangleForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#result {
+    background-color: #f9f9f9;
+    color: gray;
+    font-weight: bold;
+}
